@@ -1,3 +1,7 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
+
 class RewardEnvironment():
     """Reproduce environment used in
     https://arxiv.org/abs/2106.04399 and
