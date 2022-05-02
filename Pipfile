@@ -10,6 +10,7 @@ numpy = "*"
 pandas = "*"
 seaborn = "*"
 tensorflow-probability = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.7"
