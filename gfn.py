@@ -203,7 +203,6 @@ class GFNAgent():
             normalized_actions = self.mask_and_norm_backward_actions(cur_pos, model_back_probs)
             # Select most likely action
             action = np.argmax(normalized_actions)
-            prob = np.max(normalized_actions)
             action_one_hot = tf.one_hot(action, self.action_space).numpy()
             # Update position based on selected action
             cur_pos[action] -= 1
