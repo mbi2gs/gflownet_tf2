@@ -173,7 +173,6 @@ class GFNAgent():
         :return: (nd.array) Masked and re-normalized probabilities
         """
         assert isinstance(position, np.ndarray)
-        mask = (position > 0).astype(int)
         masked_actions = position * backward_probs.numpy()
         # Normalize masked probabilities so that they again sum to 1
         normalized_actions = masked_actions / np.sum(masked_actions, axis=1, keepdims=True)
